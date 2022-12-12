@@ -7,6 +7,7 @@
             <Label Text="Welcome Page"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Entrar en la app" Clicked="Button_Clicked" Background="blue" TextColor="White"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

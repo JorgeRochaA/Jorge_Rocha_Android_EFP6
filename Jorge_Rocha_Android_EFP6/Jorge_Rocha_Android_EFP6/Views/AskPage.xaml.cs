@@ -15,6 +15,7 @@ namespace Jorge_Rocha_Android_EFP6.Views
         public AskPage()
         {
             InitializeComponent();
+            this.Title = "Welcome! " + GobalItems.GlobalUser.FirstName + GobalItems.GlobalUser.LastName;
         }
     }
 }
