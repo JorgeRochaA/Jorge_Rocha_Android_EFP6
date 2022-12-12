@@ -7,6 +7,14 @@
             <Label Text="AskPage"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtAskDescription" Placeholder="Ask Desciptiopn" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtImageURL" Placeholder="Image URL" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtAskDetail" Placeholder="Ask Detail" Keyboard="Chat"></Entry>
+
+            <Button x:Name="BtnAdd" Text="Add Question" Clicked="BtnAdd_Clicked"/>
+            <Button x:Name="BtnCancel" Text="Cancel" Clicked="BtnCancel_Clicked"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
