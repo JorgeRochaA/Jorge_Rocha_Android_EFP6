@@ -18,6 +18,7 @@ namespace Jorge_Rocha_Android_EFP6.Views
         public AskPage()
         {
             InitializeComponent();
+            BindingContext = viewModel = new AskViewModel();
             this.Title = "Welcome! " + GobalItems.GlobalUser.FirstName + GobalItems.GlobalUser.LastName;
         }
 
@@ -39,7 +40,6 @@ namespace Jorge_Rocha_Android_EFP6.Views
 
             bool R = await viewModel.AddNewAsk(
                 txtAskDescription.Text.Trim(),
-                3,
                 txtImageURL.Text.Trim(),
                 txtAskDetail.Text.Trim());
 

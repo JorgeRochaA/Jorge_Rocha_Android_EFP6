@@ -13,7 +13,7 @@ namespace Jorge_Rocha_Android_EFP6.ViewModels
         MyAsk = new Ask();
         }
 
-        public async Task<bool> AddNewAsk(string askDescription,int userId,string imageUrl,string askDetail)
+        public async Task<bool> AddNewAsk(string askDescription,string imageUrl,string askDetail)
         {
             if (IsBusy) return false;
             IsBusy = true;
@@ -24,9 +24,9 @@ namespace Jorge_Rocha_Android_EFP6.ViewModels
 
                 MyAsk.AskDescription= askDescription;
 
-                MyAsk.UserId = userId;
+                MyAsk.UserId = 3;
 
-                MyAsk.AskStatusId = 1;
+                MyAsk.AskStatusId = 4;
 
                 MyAsk.IsStrike = true;
 
